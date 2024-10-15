@@ -1,12 +1,13 @@
 #include "./userInput.hpp"
+#include "./sumOfArray.hpp"
 #include <iostream>
+#include <memory>
 
 using namespace std;
 
 namespace input{
     void userInput(){
         int size = 1;
-        //int* numbers = new int[size];
         unique_ptr<int[]> numbers = make_unique<int[]>(size);
         int entries = 0;
 
@@ -29,7 +30,8 @@ namespace input{
                 for(int i = 0; i < entries; i ++){
                     numbers[i] = temporaryArray[i];
                 }
-                
+                int sum = arraySum::sumOfArray(numbers, entries);
+                cout << "sum of ints: " <<  sum << endl;
             }
         }
     }
