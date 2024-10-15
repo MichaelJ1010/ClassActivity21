@@ -1,5 +1,5 @@
-#ifndef USERINPUT_H
-#define USERINPUT_H
+#ifndef SUMOFARRAY_H
+#define SUMOFARRAY_H
 
 namespace sumArray{
     int sumOfArray(int* list, int size);

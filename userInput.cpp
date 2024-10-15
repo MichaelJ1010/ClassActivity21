@@ -30,9 +30,11 @@ namespace input{
                 for(int i = 0; i < entries; i ++){
                     numbers[i] = temporaryArray[i];
                 }
-                int sum = arraySum::sumOfArray(numbers, entries);
-                cout << "sum of ints: " <<  sum << endl;
+                
             }
+            
         }
+        int sum = sumArray:: sumOfArray(numbers.get(), entries);
+        cout << "sum of ints: " <<  sum << endl;
     }
 }
